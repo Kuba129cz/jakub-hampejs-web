@@ -1,12 +1,21 @@
 .content {
-    position: relative;
-    width: 800px;
-    margin: 0 auto;
-  //  padding-top: 80px;
-    font-family: Lato, sans-serif;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  font-family: Lato, sans-serif;
+
+  @media (max-width: 800px) {
+    width: 90%;      // zabere většinu šířky viewportu
+    max-width: 100%; // nepřeteče
+    padding: 0 10px; // volitelně trochu paddingu
+  }
+
+  @media (max-width: 400px) {
+    width: 100%;
+    padding: 0 5px;
+  }
 }
 
-.content .section{
-    margin-bottom: 80px;
+.content .section {
+  margin-bottom: 80px;
 }
-

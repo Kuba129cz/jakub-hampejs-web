@@ -1,8 +1,23 @@
+@media (max-width: 600px) {
+  .links {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.5rem;          
+    margin-left: 0;         
+    align-items: stretch;   
+  }
+
+  .links .button {
+    width: 60%;            
+    text-align: center;
+  }
+}
+
+
 .links {
   display: flex;
-  gap: 1rem; /* space between buttons */
+  gap: 1rem; 
   margin-left: 0.5rem;
-//  margin-top: 1.1rem;
 }
 
 .button {
@@ -61,14 +76,13 @@
   margin-left 1rem
 
   li
-    margin-bottom 15px       // space between buttons
+    margin-bottom 15px  
 
   a.button
-    min-width 250px          // all buttons the same width
+    min-width 250px          
     text-align center
 
 
-//
 .top-right-button
   position fixed
   top 30px
